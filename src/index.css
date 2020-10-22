@@ -1,0 +1,125 @@
+
+
+body {
+  background-color: #FFD791;
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button.ui.button {
+  background-color: #9C6615;
+  color: #FFD791;
+  text-align: center;
+}
+
+#RouterNavLink {
+  color: #FFD791;
+  border-style: solid;
+  border-width: thin;
+}
+
+.content {
+  color: #FFD791
+}
+
+.center {
+  text-align: center;
+  background-color: #FFD791;
+  border-style: solid;
+  padding: 20px
+}
+#taskbutton {
+  text-align: center
+}
+
+.newform {
+  text-align: center;
+  font-size: 50px;
+}
+
+.showcard {
+  text-align: center;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: #FFD791;
+  color: brown;
+  border-style: solid;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.editpage {
+  text-align: center;
+}
+
+.field {
+  font-size: 24px;
+  color: #413620
+}
+
+div.ui.items.center{
+  padding: 50px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+.newtaskname {
+  padding: 20px;
+  width: 35px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+label {
+  font-size: 150px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-family: "Times New Roman";
+  text-align: center;
+  color: brown
+}
+
+.field{
+  color: brown
+}
+
+
+div.ui.divided.items.showcard{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+h3 {
+  color: brown;
+  text-align: center;
+  outline: 0px;
+  outline-offset: 50px
+}
+
+.loginbox {
+  width: 350px;
+  margin-left: 570px;
+  margin-right: auto;
+  text-align: center
+}
+
+
+
+
+
+
+
