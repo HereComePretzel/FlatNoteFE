@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import {Button, Form, Input, TextArea} from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
+import {Form, Input, TextArea} from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import { editNote } from './actions/notes'
 import Navbar from './Navbar'
@@ -27,8 +26,8 @@ class Edit extends Component {
       fetch(`http://localhost:3000/notes/${this.props.notes[0].id}`, reqObj)
       .then(resp => resp.json())
       .then(note => {
-        this.props.history.push('/')
         this.props.editNote(note)
+        this.props.history.push('/')
       })
     }
 
@@ -49,31 +48,46 @@ class Edit extends Component {
     })
   }
 
-  render() {
-    const { value } = this.state
-    
-    return (
-      <Form  className="editpage" onSubmit={this.editNote}>
-      <Navbar />
-        <Form.Group widths='equal'>
-          <Form.Field
-            control={Input}
-            label='Task'
-            value={this.state.title}
-            name='title'
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Form.Field
-          control={TextArea}
-          label='Details'
-          name='body'
-          value={this.state.body}
-          onChange={this.handleChange}
-        />
+  // render() {
 
-        <Form.Button>Update</Form.Button>
-      </Form>
+    
+  //   return (
+  //     <Form  className="editpage" onSubmit={this.editNote}>
+  //     <Navbar />
+  //       <Form.Group widths='equal'>
+  //         <Form.Field
+  //           control={Input}
+  //           label='Task'
+  //           value={this.state.title}
+  //           name='title'
+  //           onChange={this.handleChange}
+  //         />
+  //       </Form.Group>
+  //       <Form.Field
+  //         control={TextArea}
+  //         label='Details'
+  //         name='body'
+  //         value={this.state.body}
+  //         onChange={this.handleChange}
+  //       />
+
+  //       <Form.Button>Update</Form.Button>
+  //     </Form>
+  //   )
+  // }
+  render() {
+    return (
+        <div>
+          <Navbar />
+        <form className='newcontainer' onSubmit={this.editNote}>
+        <h1 className='titletext'>Task</h1>
+          <input className='titlebox' name='title' onChange={this.handleChange} value={this.state.title}/>
+          <h2 className='titletext'>Description</h2>
+          <textarea name='body' onChange={this.handleChange} value={this.state.body}/>
+          <br></br>
+          <input className='editbutton' type='submit' value='Update Task' />
+        </form>
+      </div>
     )
   }
 }

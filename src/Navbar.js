@@ -8,7 +8,7 @@ import { logoutSuccess } from './actions/auth'
 class Navbar extends React.Component {
         render() {
         return(
-            <div className="ui menu" id='navbar' style={{background: '#413620'}}>
+            <div className="ui menu" id='navbar' style={{background: 'orange'}}>
               <div className="left menu">
               <Link  id="RouterNavLink" to="/"><Button size='big'>FlatNote</Button></Link>
                 

@@ -32,7 +32,7 @@ class Show extends React.Component {
       <Icon name='thumbtack'/>
 
       
-      <Item.Content >
+      <Item.Content className='showcard'>
         <Item.Header as='a'>{this.props.notes[0].title}</Item.Header>
         <Item.Description>{this.props.notes[0].body}</Item.Description>
         <Item.Extra>

@@ -18,7 +18,13 @@ const notes = (state=initialState, action) => {
         case 'NEW_NOTE':
             return [...state, action.note]
         case 'EDIT_NOTE':
-            return [...state, action.note]
+            const newNote = {
+                ...state[0],
+                title: action.note.title,
+                body: action.note.body
+            }
+            return [newNote]
+            // return [...state, action.note]
         case 'DELETE_NOTE':
             const delId = parseInt(action.id)
             const delNote = state.filter(note => {

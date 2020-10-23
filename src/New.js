@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import {Form, Input, TextArea, Container} from 'semantic-ui-react'
-// import { Link } from 'react-router-dom'
+import {Form, Input, TextArea} from 'semantic-ui-react'
 import {connect} from 'react-redux'
 import { newNote } from './actions/notes'
 import Navbar from './Navbar'
@@ -10,7 +9,7 @@ class New extends Component {
   state = {
     title: '',
     body: '',
-    user_id: '4'
+    user_id: '5'
   }
 
 
@@ -34,13 +33,13 @@ class New extends Component {
     }
   
 
-    componentDidMount(){
-      this.setState({
-        title: '',
-        body: '',
-        id: ''
-      })
-    }
+    // componentDidMount(){
+    //   this.setState({
+    //     title: '',
+    //     body: '',
+    //     id: ''
+    //   })
+    // }
   
 
   handleChange = (e) => {
@@ -49,32 +48,18 @@ class New extends Component {
     })
   }
   render() {
-    // const { value } = this.state
     return (
-      
-      <Form className="newform" onSubmit={this.addNote}>
-      <Navbar />
-        <Form.Group widths='equal' align='center'>
-          <Form.Field 
-            control={Input}
-            class='newtaskname'
-            name= 'title'
-            value={this.state.title}
-            label='Task'
-            placeholder='Task'
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Form.Field
-          control={TextArea}
-          label='Details'
-          name='body'
-          value={this.state.body}
-          onChange={this.handleChange}
-        />
-
-        <Form.Button>Add Task</Form.Button>
-      </Form>
+        <div>
+          <Navbar />
+        <form className='newcontainer' onSubmit={this.addNote}>
+        <h1 className='titletext'>Task</h1>
+          <input name='title' className='titlebox' onChange={this.handleChange} value={this.state.title}/>
+          <h2 className='titletext'>Description</h2>
+          <textarea name='body' onChange={this.handleChange} value={this.state.body}/>
+          <br></br>
+          <input className='addbutton' type='submit' value='Add Task' />
+        </form>
+      </div>
     )
   }
 }
