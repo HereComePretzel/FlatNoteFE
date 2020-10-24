@@ -3,13 +3,12 @@
 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Didot, "Didot LT STD", "Hoefler Text";
 }
 
 button.ui.button {
-  background-color: #670808d0;
-  color: orange;
+  background-color: orange;
+  color: #670808d0;
   text-align: center;
 }
 
@@ -25,11 +24,11 @@ button.ui.button {
 
 .center {
   text-align: center;
-  background-color: #FFD791;
-  padding: 20px;
-  margin-bottom: 10px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text" bold;
+  font-size: larger;
+  background-color:#670808D0;
   border-radius: 100px;
-  box-shadow: 1px 1px 5px 3px orange;
+  box-shadow: 1px 1px 10px 3px orange;
 }
 #taskbutton {
   text-align: center
@@ -84,7 +83,7 @@ label {
   font-size: 150px;
   padding-top: 100px;
   padding-bottom: 20px;
-  font-family: "Times New Roman";
+  font-family: Didot, "Didot LT STD", "Hoefler Text";
   text-align: center;
   color: white;
 }
@@ -139,7 +138,8 @@ div.ui.divided.items.showcard{
 .showcard{
   margin-top: 400px;
   box-shadow: 1px 1px 1000px 20px orange;
-  border-radius: 100px
+  border-radius: 100px;
+  background-color: #670808D0
 }
 
 .newcontainer {
@@ -201,6 +201,7 @@ textarea {
   height: 25px;
   width: 200px
 }
+
 
 
 

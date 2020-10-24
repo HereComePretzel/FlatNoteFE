@@ -48,33 +48,7 @@ class Edit extends Component {
     })
   }
 
-  // render() {
-
-    
-  //   return (
-  //     <Form  className="editpage" onSubmit={this.editNote}>
-  //     <Navbar />
-  //       <Form.Group widths='equal'>
-  //         <Form.Field
-  //           control={Input}
-  //           label='Task'
-  //           value={this.state.title}
-  //           name='title'
-  //           onChange={this.handleChange}
-  //         />
-  //       </Form.Group>
-  //       <Form.Field
-  //         control={TextArea}
-  //         label='Details'
-  //         name='body'
-  //         value={this.state.body}
-  //         onChange={this.handleChange}
-  //       />
-
-  //       <Form.Button>Update</Form.Button>
-  //     </Form>
-  //   )
-  // }
+ 
   render() {
     return (
         <div>

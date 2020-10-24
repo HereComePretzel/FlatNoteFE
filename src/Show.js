@@ -32,9 +32,9 @@ class Show extends React.Component {
       <Icon name='thumbtack'/>
 
       
-      <Item.Content className='showcard'>
-        <Item.Header as='a'>{this.props.notes[0].title}</Item.Header>
-        <Item.Description>{this.props.notes[0].body}</Item.Description>
+      <Item.Content >
+        <Item.Header style={{color: '#FFA500'}}as='a'>{this.props.notes[0].title}</Item.Header>
+        <Item.Description style={{color: '#FFA500'}}>{this.props.notes[0].body}</Item.Description>
         <Item.Extra>
           <Link to={link}><Button>
             Edit

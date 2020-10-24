@@ -11,9 +11,9 @@ const HomeCard = props => {
     <Item>
       <Icon name='thumbtack' size='large' corner='bottom right' color='brown'/>
 
-      <Item.Content>
-        <Item.Header as='a'>{props.noteObj.title}</Item.Header>
-        <Item.Description>{props.noteObj.body}</Item.Description>
+      <Item.Content >
+        <Item.Header style={{color: '#FFA500'}} as='a'>{props.noteObj.title}</Item.Header>
+        <Item.Description style={{color: '#FFA500'}}>{props.noteObj.body}</Item.Description>
         <Item.Extra>
         <Link to={showLink}><Button>
             View
